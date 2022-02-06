@@ -1,0 +1,179 @@
+/*--------------------------------------------------
+ 独自追加分
+--------------------------------------------------*/
+
+/* レビューを書くが機能していないので非表示対応
+--------------------------------------------------*/
+.spr-summary-actions-newreview {
+  display: none;
+}
+
+/* テキストブロックのリンク部分調整用
+--------------------------------------------------*/
+.Testimonial__Content a {
+  display: inline-block;
+  position: relative;
+  color: #6a6a6a;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.Testimonial__Content a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: currentColor;
+  transform: scale(1,1);
+  transform-origin: left center;
+  transition: transform .2s ease-in-out;
+}
+
+.Testimonial__Content a:hover {
+  outline: 0;
+}
+
+.Testimonial__Content a:hover::before {
+  transform: scale(0,1);
+}
+
+/* カラースウォッチ日本語対応用（ColorSwatch）
+--------------------------------------------------*/
+/* Tシャツとその他も含む */
+.ColorSwatch[data-tooltip = ブラック] {
+  background-color: #0c0c0c;
+}
+
+.ColorSwatch[data-tooltip = ネイビー] {
+  background-color: #212642;
+}
+
+.ColorSwatch[data-tooltip = ブラウン] {
+  background-color: #322622;
+}
+
+.ColorSwatch[data-tooltip = レッド] {
+  background-color: #b90116;
+}
+
+.ColorSwatch[data-tooltip = フォレスト] {
+  background-color: #223e25;
+}
+
+.ColorSwatch[data-tooltip = トゥルーロイヤル] {
+  background-color: #01408d;
+}
+
+.ColorSwatch[data-tooltip = アーミー] {
+  background-color: #4e4737;
+}
+
+.ColorSwatch[data-tooltip = ベリー] {
+  background-color: #c02773;
+}
+
+.ColorSwatch[data-tooltip = アスファルト] {
+  background-color: #52514f;
+}
+
+.ColorSwatch[data-tooltip = オリーブ] {
+  background-color: #5b642f;
+}
+
+.ColorSwatch[data-tooltip = Autumn] {
+  background-color: #c85313;
+}
+
+.ColorSwatch[data-tooltip = アクア] {
+  background-color: #008db5;
+}
+
+.ColorSwatch[data-tooltip = ケリー] {
+  background-color: #1a9462;
+}
+
+.ColorSwatch[data-tooltip = モーブ] {
+  background-color: #bf6e6e;
+}
+
+.ColorSwatch[data-tooltip = リーフ] {
+  background-color: #5c9346;
+}
+
+.ColorSwatch[data-tooltip = スチールブルー] {
+  background-color: #668ea7;
+}
+
+.ColorSwatch[data-tooltip = ゴールド] {
+  background-color: #ff9e00;
+}
+
+.ColorSwatch[data-tooltip = ピンク] {
+  background-color: #fdbfc7;
+}
+
+.ColorSwatch[data-tooltip = イエロー] {
+  background-color: #ffd35c;
+}
+
+.ColorSwatch[data-tooltip = シルバー] {
+  background-color: #e3e3dd;
+}
+
+.ColorSwatch[data-tooltip = ホワイト] {
+  background-color: #ffffff;
+}
+
+/* パーカー・スウェットのみ */
+.ColorSwatch[data-tooltip = マルーン] {
+  background-color: #47171c;
+}
+
+.ColorSwatch[data-tooltip = ダークヘザー] {
+  background-color: #46484d;
+}
+
+.ColorSwatch[data-tooltip = インディゴブルー] {
+  background-color: #395d82;
+}
+
+.ColorSwatch[data-tooltip = ミリタリーグリーン] {
+  background-color: #5c5e35;
+}
+
+.ColorSwatch[data-tooltip = アイリッシュグリーン] {
+  background-color: #1d9345;
+}
+
+.ColorSwatch[data-tooltip = スポーツグレー] {
+  background-color: #9b969c;
+}
+
+.ColorSwatch[data-tooltip = ライトブルー] {
+  background-color: #a1c5e1;
+}
+
+.ColorSwatch[data-tooltip = ライトピンク] {
+  background-color: #f3d4e3;
+}
+
+/* メンズ長袖Tシャツのみ */
+.ColorSwatch[data-tooltip = ロイヤル] {
+  background-color: #1652ac;
+}
+
+/* レディース半袖Tシャツのみ */
+.ColorSwatch[data-tooltip *= Charity] {
+  background-color: #ffb3c7;
+}
+
+/* マグカップのみ */
+.ColorSwatch[data-tooltip *= オレンジ] {
+  background-color: #f85625;
+}
+
+.ColorSwatch[data-tooltip *= ブルー] {
+  background-color: #1e9fcd;
+}
